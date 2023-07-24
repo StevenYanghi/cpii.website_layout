@@ -10,48 +10,77 @@
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
-    <header style="height: 60px; padding-top: 5px; color:white">
-      <h1 class="lang" data-zh="歡迎來到研究項目" data-en="Welcome to Project Research">歡迎來到研究項目</h1>
-    </header>
-    <top>
-      <div class="navbar">
-        <nav style="float:left">
-          <a href=" " onclick="switchLanguage('zh')" style="padding-bottom: 3px; padding-top: 5px;">中文</a >                
-          <a href="#" onclick="switchLanguage('en')" style="padding-bottom: 3px; padding-top: 8px;">Eng</a >
-          <div class="line_between_lang"></div>
-        </nav>
-        <p></p >
-        <div>
-          <nav>
-            <ul>
-              <li><a href="#home" class="lang" data-zh="首頁" data-en="Home">首頁</a ></li>
-              <li><a href="#About" class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders">了解神經認知障礙</a ></li>
-              <li><a href="#technical" class="lang" data-zh="技術" data-en="technical">技術</a ></li>  
-              <li><a href="#partners" class="lang" data-zh="相關資訊" data-en="relevant information">相關資訊</a ></li>  
-              <li><a href="#contact" class="lang" data-zh="願景" data-en="Future">願景</a ></li>
-            </ul>
+    <div class="header_bar">
+      <header style="height: 60px; padding-top: 5px; color:white">
+        <h1 class="lang" data-zh="歡迎來到研究項目" data-en="Welcome to Project Research">歡迎來到研究項目</h1>
+      </header>
+      <top>
+        <div class="navbar">
+          <nav style="float:left">
+            <a href=" " onclick="switchLanguage('zh')" style="padding-bottom: 3px; padding-top: 5px;">中文</a >                
+            <a href="#" onclick="switchLanguage('en')" style="padding-bottom: 3px; padding-top: 8px;">Eng</a >
+            <div class="line_between_lang"></div>
           </nav>
+          <p></p >
+          <div>
+            <nav>
+              <ul>
+                <li><a href="#home" class="lang" data-zh="首頁" data-en="Home" style="height: 69px">首頁</a ></li>
+                <li><a href="" class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders" style="height: 69px">了解神經認知障礙</a ></li>
+                <li><a href="" class="lang" data-zh="技術" data-en="technical" style="height: 69px" >技術</a ></li>  
+                <li><a href="" class="lang" data-zh="相關資訊" data-en="relevant information" style="height: 69px">相關資訊</a ></li>  
+                <li><a href="" class="lang" data-zh="願景" data-en="Future" style="height: 69px">願景</a ></li>
+                <li><a href="#contact" class="lang" data-zh="聯繫我們" data-en="Contact" style="height: 69px">聯繫我們</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
-    </top>
-    <div class="content">
-      <section id="About">
-        <h2 class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders">了解神經認知障礙</h2>
-        <p class="lang" data-zh="神經認知障礙是......" data-en="Neurocognitive disorders are......">神經認知障礙是......</p >
-      </section>
-      <section id="technical">
-        <h2 class="lang" data-zh="技術" data-en="technical">技術</h2>
-        <p class="lang" data-zh="我們的技術包括......" data-en="Our technical include...">我們的技術包括......</p >
-      </section>
-      <section id="partners">
-        <h2 class="lang" data-zh="相關資訊" data-en="relevant information">相關資訊</h2>
-        <p class="lang" data-zh="近期也有相關研究......" data-en="There are also recent related research">近期也有相關研究......</p >
-      </section>
-      <section id="Contact">
-        <h2 class="lang" data-zh="願景" data-en="Future">願景</h2>
-        <p class="lang" data-zh="我们希望......" data-en="We hope......">我們希望......</p >
-      </section>
+      </top>
     </div>
+    <div class="box">
+      <section id="about" style="animation: fade-in-ltr 1s ease-out; text-align: right;">
+          <button class="btn" onclick="location.href='';" role="link" tabindex="0">
+              <h2 class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders">了解神經認知障礙</h2>
+              <p class="lang" data-zh="神經認知障礙是......" data-en="Neurocognitive disorders are......">神經認知障礙是......</p>
+          </button>
+      </section>
+      <section id="technical" style="animation: fade-in-rtl 1s ease-out; text-align: left;">
+          <button class="btn" onclick="location.href='';" role="link" tabindex="0">
+              <h2 class="lang" data-zh="技術" data-en="technical">技術</h2>
+              <p class="lang" data-zh="我們的技術包括......" data-en="Our technical include...">我們的技術包括......</p>
+          </button>
+      </section>
+      <section id="partners" style="animation: fade-in-ltr 1s ease-out; text-align: right;">
+          <button class="btn" onclick="location.href='';" role="link" tabindex="0">
+              <h2 class="lang" data-zh="相關資訊" data-en="relevant information">相關資訊</h2>
+              <p class="lang" data-zh="近期也有相關研究......" data-en="There are also recent related research">近期也有相關研究......
+              </p>
+          </button>
+      </section>
+      <section id="hope" style="animation: fade-in-rtl 1s ease-out; text-align: left;">
+          <button class="btn" onclick="location.href='';" role="link" tabindex="0">
+              <h2 class="lang" data-zh="願景" data-en="Future">願景</h2>
+              <p class="lang" data-zh="我们希望......" data-en="We hope......">我們希望......</p>
+          </button>
+      </section>
+  </div>
+    <br>
+    <center>
+      <section id="contact" style="box-shadow: 0px 0px 10px rgba(0.2, 0.2, 0.2, 0.2); background-color: #000; color:#fff;">
+        <h2 class="lang" data-zh="聯繫我們" data-en="Contact">聯繫我們</h2>
+        <p class="lang" data-zh="如果您有任何問題，請隨時聯繫我們。"
+            data-en="If you have any questions, please feel free to contact us.">如果您有任何問題，請隨時聯繫我們。</p>
+        <form>
+            <label for="name" class="lang" data-zh="姓名" data-en="Name"> 姓名</label>
+            <input type="text" id="name" name="name" required="">
+            <label for="email" class="lang" data-zh="電郵" data-en="Email">電郵</label>
+            <input type="email" id="email" name="email" required="">
+            <label for="message" class="lang" data-zh="信息" data-en="Message" required>信息</label>
+            <textarea id="message" name="message" required style="height:64px ;width:600px"></textarea>
+            <button type="submit" class="lang" data-zh="發送信息" data-en="Send Message">發送信息</button>
+        </form>
+    </section>
+    </center>
     <center>
       <img class="img1" src="centre-for-perceptual.jpeg">
       <img class="img2" src="lf-1665015571-CPII-logo-47.jpeg">

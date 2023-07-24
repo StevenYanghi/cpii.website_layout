@@ -9,7 +9,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white; /* Used if the image is unavailable */
     }
+@media only screen and (min-device-width: 400px){
+  .mainbody{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+}    
     
 a {
     text-decoration: none;
@@ -19,47 +28,61 @@ a {
 ul {
     list-style: none;
 }
-    
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 .main{
-    width:100%;
-    height:auto;
-    position:relative;
-    opacity:0.8;
+  max-width:75%;
+  float:left;
+  padding:0 1.5em 1em 0;
+  top:0.25em;
+  /*width:80%;
+  height:100%;
+  margin: 0 auto;
+  padding: 2rem;*/
+  position:fixed;
 }
+
 .sen1{
+    color:#fff;
     font-family:'Times New Roman', Times, serif;
-    font-size:55px;
-    top:23%;
-    left:100px;
-    position:fixed;
+    font-size:3rem;
+    top:20%;
+    right:10%;
+    position:absolute;
 }
 .sen2{
+    color:#fff;
     font-family:'Times New Roman', Times, serif;
-    font-size:55px;
-    top:38%;
-    left:42%;
-    position:fixed;
+    font-size:3rem;
+    top:34%;
+    right:5%;
+    position:absolute;
 }
+@keyframes fade-in-rtl-1 {
+  from {
+    opacity:0;
+    transform:translateX(20%);
+  }
+  to {
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
 .button {
     border-radius: 12px;
-    background-color:black;
+    background-color:rgb(22, 22, 22);
     border: none;
-    color: #FFFFFF;
+    color: #f7f7f7;
     text-align: center;
     font-size: 28px;
     top:60%;
-    left:24%;
-    width: 200px;
-    height:60px;
+    right:25%;
+    width: 210px;
+    height:80px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    position:fixed;
+    position:absolute;
   }
   
   .button span {
@@ -89,185 +112,220 @@ img {
     
     /* Header Styles */
     
-    header {
-    background-color: #333;
-    width: 100%;
-    z-index: 999;
-    text-align: center; 
-    }
-    
-    nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    }
-    
-    nav ul {
-    display: flex;
-    }
-    
-    nav li {
-    margin-left: 2rem;
-    }
-    
-    nav a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    }
-    
+  .header_bar {
+      animation: fade-in-up 1s ease-out;
+  }
+  
+  header {
+      height: 60px;
+      padding-top: 5px;
+      color: white;
+  }
+  
+  header {
+      background-color: #333;
+      width: 100%;
+      z-index: 999;
+      text-align: center;
+  }
+  
+  nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+  }
+  
+  nav ul {
+      display: flex;
+  }
+  
+  nav li {
+      margin-left: 2rem;
+  }
+  
+  nav a {
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
     /* Main Styles */
     
     main {
-    margin-top: 80px;
-    }
-    
-    section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    }
-    
-    section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    }
-    
-    section p {
-    margin-bottom: 2rem;
-    }
-    
-    .btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    }
-    
-    .btn:hover {
-    background-color: #666;
-    }
+      margin-top: 80px;
+  }
+  
+  .box {
+      size-adjust: 10px 30px 10px 30px;
+      box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2);
+      padding-left: 0px;
+      border-left-width: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      border-radius: 20px 20px 20px 20px;
+  }
+  
+  
+  
+  section {
+      flex: 1 1 300px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      padding: 30px;
+      animation: ade-in 1s ease-out;
+  }
+  
+  section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  section p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+  }
+  
+  
+  .btn {
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      width: 468px;
+      height: 271px;
+      display: inline-block;
+      background-color: none;
+      color: #000000;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+      background-color: #666;
+  }
     
     /* Portfolio Styles */
     
-    .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
-    }
-    
-    .item {
-    position: relative;
-    }
-    
-    .item h3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 0.5rem;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-    transition: all 0.3s ease;
-    }
-    
-    .item:hover h3 {
-    opacity: 1;
-    }
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+  }
+  
+  .item {
+      position: relative;
+  }
+  
+  .item h3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 0.5rem;
+      width: 100%;
+      margin: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+  }
+  
+  .item:hover h3 {
+      opacity: 1;
+  }
     
     /* Contact Styles */
     
-    form {
-    max-width: 600px;
-    margin: 0 auto;
-    }
-    
-    label {
-    display: block;
-    margin-bottom: 0.5rem;
-    }
-    
-    input,
-    textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 5px;
-    }
-    
-    button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    }
-    
-    button[type="submit"]:hover {
-    background-color: #666;
-    }
+  form {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: #666;
+  }
     
     /* Navigation bar */
-    .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #333;
-    border-radius: 0 0 20px 20px;
-    overflow: hidden;
-    }
-    
-    .navbar a {
-    display: inline-block;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-    
-    .navbar a:hover {
-    background-color: #111;
-    }
+  .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: #333;
+      border-radius: 0 0 20px 20px;
+      overflow: hidden;
+  }
+  
+  .navbar a {
+      display: inline-block;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  
+  .navbar a:hover {
+      background-color: #111;
+  }
     
     /* Navigation links in content */
-    .nav-links {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    }
-    
-    .nav-links ul {
-    display: flex;
-    }
-    
-    .nav-links li {
-    margin-left: 2rem;
-    }
-    
-    .nav-links a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    }
-    
-    /* Additional styles for language line */
-    .line_between_lang {
-    position: absolute;
-    top: 18px;
-    left: 87px;
-    width: 2px;
-    height: 31px;
-    background-color: white;
-    }
+  .nav-links {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .nav-links ul {
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin-left: 2rem;
+  }
+  
+  .nav-links a {
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+  
+  /* Additional styles for language line */
+  .line_between_lang {
+      position: absolute;
+      top: 18px;
+      left: 87px;
+      width: 2px;
+      height: 31px;
+      background-color: white;
+  }
     
     /* Footer */
     footer {
@@ -324,25 +382,97 @@ img {
     padding: 10px;
     }
     
-    section {
-    flex: 1 1 300px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    padding: 50px;
-    text-align: center;
-    }
-    
-    section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    }
-    
-    section p {
-    font-size: 18px;
-    line-height: 1.5;
-    }
+
+
+    /* Default styles */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Toggle button */
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Dark mode styles for specific elements */
+a {
+  color: #ffffff;
+}
+
+button {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+button.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+#success-message {
+  display: none;
+}
+
+#success-message:not(.hidden) {
+  display: block;
+}
+
+@keyframes fade-in-rtl {
+  from {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-ltr {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
     
     @media only screen and (max-width: 600px) {
     .navbar a {

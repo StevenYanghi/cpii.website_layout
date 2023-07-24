@@ -24,3 +24,16 @@ for (var j = 0; j < menuItemsWithSubMenu.length; j++) {
     menuItemsWithSubMenu[j].parentNode.parentNode.parentNode.classList.add('open');
   }
 }
+
+scheme
+Copy
+const stickyList = document.querySelector('.navbar');
+const stickyListTop = stickyList.offsetTop;
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset >= stickyListTop) {
+    stickyList.classList.add('sticky');
+  } else {
+    stickyList.classList.remove('sticky');
+  }
+});

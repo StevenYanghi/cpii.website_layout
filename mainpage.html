@@ -12,12 +12,13 @@
   <body>
     <div class="header_bar">
       <header style="height: 60px; padding-top: 5px; color:white">
-        <h1 class="lang" data-zh="歡迎來到研究項目" data-en="Welcome to Project Research">歡迎來到研究項目</h1>
+        <a href="index.html"><h1 class="lang" data-zh="歡迎來到研究項目" data-en="Welcome to Project Research">歡迎來到研究項目</h1></a>
       </header>
+    </div>  
       <top>
         <div class="navbar">
           <nav style="float:left">
-            <a href=" " onclick="switchLanguage('zh')" style="padding-bottom: 3px; padding-top: 5px;">中文</a >                
+            <a href="#" onclick="switchLanguage('zh')" style="padding-bottom: 3px; padding-top: 5px;">中文</a >                
             <a href="#" onclick="switchLanguage('en')" style="padding-bottom: 3px; padding-top: 8px;">Eng</a >
             <div class="line_between_lang"></div>
           </nav>
@@ -25,21 +26,21 @@
           <div>
             <nav>
               <ul>
-                <li><a href="#home" class="lang" data-zh="首頁" data-en="Home" style="height: 69px">首頁</a ></li>
-                <li><a href="" class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders" style="height: 69px">了解神經認知障礙</a ></li>
-                <li><a href="" class="lang" data-zh="技術" data-en="technical" style="height: 69px" >技術</a ></li>  
-                <li><a href="" class="lang" data-zh="相關資訊" data-en="relevant information" style="height: 69px">相關資訊</a ></li>  
-                <li><a href="" class="lang" data-zh="願景" data-en="Future" style="height: 69px">願景</a ></li>
+                <li><a href="mainpage.html" class="lang" data-zh="首頁" data-en="Home" style="height: 69px">首頁</a ></li>
+                <li><a href="neurocognitive_disorders.html" class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders" style="height: 69px">了解神經認知障礙</a ></li>
+                <li><a href="technical.html" class="lang" data-zh="技術" data-en="technical" style="height: 69px" >技術</a ></li>  
+                <li><a href="relevant_information.html" class="lang" data-zh="相關資訊" data-en="relevant information" style="height: 69px">相關資訊</a ></li>  
+                <li><a href="hope.html" class="lang" data-zh="願景" data-en="Future" style="height: 69px">願景</a ></li>
                 <li><a href="#contact" class="lang" data-zh="聯繫我們" data-en="Contact" style="height: 69px">聯繫我們</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </top>
-    </div>
+    
     <div class="box">
       <section id="about" style="animation: fade-in-ltr 1s ease-out; text-align: right;">
-          <button class="btn" onclick="location.href='';" role="link" tabindex="0">
+          <button class="btn" onclick="location.href='neurocognitive_disorders.html';" role="link" tabindex="0">
               <h2 class="lang" data-zh="了解神經認知障礙" data-en="Understanding Neurocognitive disorders">了解神經認知障礙</h2>
               <p class="lang" data-zh="神經認知障礙是......" data-en="Neurocognitive disorders are......">神經認知障礙是......</p>
           </button>
@@ -87,7 +88,7 @@
     </center>
     <footer>
       <ul>
-        <li><a href="#" class="lang" data-zh="首頁" data-en="Home">首頁</a ></li>
+        <li><a href="mainpage.html" class="lang" data-zh="首頁" data-en="Home">首頁</a ></li>
       </ul>
       <p>&copy; 2023 Project Research. All Rights Reserved.</p >
     </footer>

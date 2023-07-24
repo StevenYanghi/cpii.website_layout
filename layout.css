@@ -136,6 +136,7 @@ ul {
       justify-content: space-between;
       align-items: center;
       padding: 1rem;
+
   }
   
   nav ul {
@@ -275,13 +276,17 @@ ul {
   }
     
     /* Navigation bar */
+
   .navbar {
       position: sticky;
       top: 0;
       z-index: 100;
       background-color: #333;
       border-radius: 0 0 20px 20px;
-      overflow: hidden;
+      overflow:hidden;
+      will-change:transform;
+      animation:fade-in-up 1s ease-out;
+
   }
   
   .navbar a {
@@ -491,6 +496,9 @@ button.dark-mode {
       width:50%;
     }
   
+.pagetitle{
+  text-align:center;
+}
 
 
     
